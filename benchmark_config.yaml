@@ -1,0 +1,41 @@
+benchmark:
+  warmup_runs: 2
+  measured_runs: 8
+  mode: corrected
+
+methods:
+  - partitioning
+  - overlapping
+
+densities:
+  - 0.40
+  - 0.50
+  - 0.60
+
+output_directory: results
+
+datasets:
+  - name: karate
+    path: data/gml/karate.gml
+    format: gml
+  - name: dolphins
+    path: data/gml/dolphins.gml
+    format: gml
+  - name: football
+    path: data/gml/football.gml
+    format: gml
+  - name: political_books
+    path: data/gml/polbooks.gml
+    format: gml
+  - name: les_miserables
+    path: data/gml/les_miserables.gml
+    format: gml
+  - name: power_grid
+    path: data/gml/power.gml
+    format: gml
+  - name: facebook_food
+    path: data/edge_lists/FB.txt
+    format: edge_list
+  - name: weaver_birds
+    path: data/edge_lists/aves-weaver-social-03.txt
+    format: edge_list

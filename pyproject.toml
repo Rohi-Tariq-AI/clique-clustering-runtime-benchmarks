@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clique-clustering-runtime-benchmarks"
+version = "1.1.0"
+description = "Reproducible runtime benchmarks for partitioning and overlapping clique-based graph clustering"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [{name = "Rohi Tariq"}]
+dependencies = [
+  "networkx>=3,<4",
+  "pandas>=2,<4",
+  "matplotlib>=3.8,<4",
+  "PyYAML>=6,<7",
+  "overlapping-graph-clustering @ git+https://github.com/Rohi-Tariq-AI/overlapping-density-graph-clustering.git@v1.0.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

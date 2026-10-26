@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this benchmark suite, please cite the repository release."
+title: "Clique-Clustering Runtime Benchmarks"
+version: 1.0.0
+authors:
+  - family-names: "Tariq"
+    given-names: "Rohi"
+repository-code: "https://github.com/Rohi-Tariq-AI/clique-clustering-runtime-benchmarks"
+license: MIT

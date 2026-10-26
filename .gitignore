@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.venv/
+.DS_Store
+.ipynb_checkpoints/
+
+# Local smoke checks
+smoke_results/
+smoke_figures/
+benchmark_config_smoke.yaml
+
+# Local smoke checks
+smoke_results/
+smoke_figures/
+benchmark_config_smoke.yaml
